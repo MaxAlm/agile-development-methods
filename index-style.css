@@ -1,6 +1,6 @@
 /*SET PAGE LENGTH*/
 .page-length {
-    height: 600px;
+    height: 700px;
 }
 
 /*PAGE IMAGE*/
@@ -36,6 +36,9 @@
 
 .page-text a {
     font-size: 17px;
+    text-decoration-color: black;
+    color: black;
+    font-weight: bold;
 }
 
 /*PAGE TITLE*/
