@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="kontakt-style.css">
+    <script src="https://kit.fontawesome.com/1e8c4929c3.js" crossorigin="anonymous"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <title>Agila Utvecklingsmetoder och HTML</title>
+</head>
+<body>
+    
+    <img banner="hamburger menu icon" id="menu-button" src="img/hamburger-icon.png" alt="hambrger-icon.png" onclick="showMenu()">
+    <div class="menu-bar-back"></div>
+
+    <!--MOBILE MENU-->
+    <div banner="mobile menu" id="menu-bar" class="menu-bar-closed">
+        <ul style="list-style-type: none;">
+            <li><a href="index.html">HEM</a></li>
+            <li><a href="klienttekniker.html">KLIENTTEKNIKER</a></li>
+            <li><a href="projektmetodik.html">PROJEKTMETODIK</a></li>
+            <li><a href="internet.html">INTERNET</a></li>
+            <li><a href="tillganglighet.html">TILLGÄNGLIGHET</a></li>
+            <li><a href="analys.html">ANALYS</a></li>
+            <li><a href="kontakt.html" class="active">KONTAKT</a></li>
+        </ul>
+    </div>
+
+    <div banner="content" class="content">
+        <!--STANDARD MENU-->
+        <div class="menu">
+            <ul style="list-style-type: none;">
+                <li><a href="index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HEM</a></li>
+                <li><a href="klienttekniker.html"><i class="fa fa-code"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KLIENTTEKNIKER</a></li>
+                <li><a href="projektmetodik.html"><i class="fa fa-list"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PROJEKTMETODIK</a></li>
+                <li><a href="internet.html"><i class="fa fa-globe"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INTERNET</a></li>
+                <li><a href="tillganglighet.html"><i class="fa fa-cogs"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TILLGÄNGLIGHET</a></li>
+                <li><a href="analys.html"><i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ANALYS</a></li>
+                <li><a href="kontakt.html" class="active"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KONTAKT</a></li>
+            </ul>
+        </div>
+
+        <!--PAGE IMAGE-->
+        <div class="page-img">
+            <img src="img/kontakt-img.jpg" alt="contact-img">
+        </div>
+    </div>
+
+    <!--PAGE TITLE-->
+    <div class="page-title">
+        <h2>Kontakt</h2>
+    </div>
+
+    <!--PAGE CONTENT-->
+    <div class="page-content-1">
+        <h1>Uppgifter</h1>
+        <p>Max Almroth<br>
+            <strong>Tel:</strong> 070-358 76 34<br>
+            <strong>Mail:</strong> verklig.adress@support.com<br>
+        </p>
+        <br>
+    </div>
+
+    <div class="page-content-2">
+        <h1>Formulär</h1>
+        <form action="tack.html" name="contactForm" onsubmit="submitForm()">
+            <!--Name label and input-->
+            <label for="name">Namn:<br>
+                <input name="name" type="text" class="input-1" style="font-size: 15px;" placeholder="Ditt namn..." required>
+            </label><br><br>
+
+            <!--Email label and input-->
+            <label for="mail">Epost:<br>
+                <input name="mail" type="email" class="input-1" style="font-size: 15px;" placeholder="Din epost adress..." required>
+            </label><br><br>
+
+            <!--Message label and input-->
+            <label for="message">Meddelande:<br>
+                <textarea name ="message" class="input-text" style="font-size: 15px;" placeholder="Ditt meddelande..." required></textarea>
+            </label><br><br>
+
+            <!--Submit form-->
+            <input type="submit" value="Skicka">
+        </form>
+        <br><br>
+    </div>
+
+    <div class="page-length"></div>
+</body>
+</html>

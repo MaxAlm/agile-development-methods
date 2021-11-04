@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 64%, rgba(231,231,231,1) 100%);
+}
+
+.content {
+    margin: auto;
+    height: 80px;
+    width: 80px;
+}
+
+.content .page-img {
+    position: relative;
+    overflow: hidden;
+
+    width: 500px;
+    height: 500px;
+    left: -220px;
+    top: 100px;
+
+    background-color: darkgray;
+    border-radius: 50px;
+    box-shadow: 8px 8px 20px black;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+textarea,
+label {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*STANDARD MENU*/
+.menu {
+    position: fixed;
+    z-index: 100;
+}
+
+.menu .active {
+    color: black;
+}
+
+.menu ul {
+    position: relative;
+    margin: auto;
+    z-index: 12;
+    left: -420px;
+    width: 100vw;
+}
+
+.menu li {
+    display: block;
+    padding-left: 70px;
+    float: left;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    color: darkgrey;
+    overflow: hidden;
+    padding-top: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    width: 40px;
+    height: 52px;
+
+    white-space: nowrap;
+    transition: 0.6s;
+}
+
+.menu li a:hover {
+    color: black;
+    width: 237px;
+}
+
+/*MENU BAR (MOBILE)*/
+#menu-button {
+    position: fixed;
+    display: none;
+    width: 45px;
+    height: 45px;
+    left: 18px;
+    top: 11px;
+    z-index: 12;
+
+    transition: 0.5s;
+}
+
+.menu-bar-back {
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    z-index: 10;
+
+    background-color: white;
+    box-shadow: 5px 5px 15px black;
+}
+
+#menu-bar {
+    position: fixed;
+    overflow: hidden;
+
+    width: 100vw;
+    z-index: 11;
+    
+    background-color: white;
+    transition: 0.5s;
+}
+
+.menu-bar-open {
+    height: 400px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.menu-bar-closed {
+    height: 70px;
+}
+
+#menu-bar .active {
+    text-decoration: underline;
+}
+
+#menu-bar li a {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 3px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    width: 100vw;
+    height: 44px;
+    top: 55px;
+    left: -40px;
+
+    text-decoration: none;
+    color: black;
+}
+
+#menu-bar li a:hover {
+    background-color: lightgray;
+}
+
+/*Auto-close mobile menu when toggling back to desktop menu*/
+@media screen and (min-width: 1301px) {
+    #menu-bar {
+        height: 70px;
+        box-shadow: none;
+        transition: none;
+    }
+}
+
+/*Toggle menu bar*/
+@media screen and (max-width: 1300px) {
+    #menu-button {
+        display: block;
+    }
+
+    .content {
+        width: 100vw;
+    }
+
+    .content .page-img {
+        margin: auto;
+        left: 0px;
+    }
+
+    .content ul {
+        display: none;
+    }
+}

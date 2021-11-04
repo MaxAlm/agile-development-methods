@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="tillgang-style.css">
+    <script src="https://kit.fontawesome.com/1e8c4929c3.js" crossorigin="anonymous"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <title>Agila Utvecklingsmetoder och HTML</title>
+</head>
+<body>
+    
+    <img banner="hamburger menu icon" id="menu-button" src="img/hamburger-icon.png" alt="hambrger-icon.png" onclick="showMenu()">
+    <div class="menu-bar-back"></div>
+
+    <!--MOBILE MENU-->
+    <div banner="mobile menu" id="menu-bar" class="menu-bar-closed">
+        <ul style="list-style-type: none;">
+            <li><a href="index.html">HEM</a></li>
+            <li><a href="klienttekniker.html">KLIENTTEKNIKER</a></li>
+            <li><a href="projektmetodik.html">PROJEKTMETODIK</a></li>
+            <li><a href="internet.html">INTERNET</a></li>
+            <li><a href="tillganglighet.html" class="active">TILLGÄNGLIGHET</a></li>
+            <li><a href="analys.html">ANALYS</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+    </div>
+
+    <div banner="content" class="content">
+        <!--STANDARD MENU-->
+        <div class="menu">
+            <ul style="list-style-type: none;">
+                <li><a href="index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HEM</a></li>
+                <li><a href="klienttekniker.html"><i class="fa fa-code"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KLIENTTEKNIKER</a></li>
+                <li><a href="projektmetodik.html"><i class="fa fa-list"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PROJEKTMETODIK</a></li>
+                <li><a href="internet.html"><i class="fa fa-globe"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INTERNET</a></li>
+                <li><a href="tillganglighet.html" class="active"><i class="fa fa-cogs"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TILLGÄNGLIGHET</a></li>
+                <li><a href="analys.html"><i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ANALYS</a></li>
+                <li><a href="kontakt.html"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KONTAKT</a></li>
+            </ul>
+        </div>
+
+        <!--PAGE IMAGE-->
+        <div class="page-img">
+            <img src="img/tillgang-img.jpg" alt="wcag-img">
+        </div>
+    </div>
+
+    <!--PAGE TITLE-->
+    <div class="page-title">
+        <h2>Tillgänglighet</h2>
+    </div>
+
+    <!--PAGE TEXT-->
+    <div class="page-text">
+        <h1>WCAG</h1>
+        <p>Web Content Accessibility Guidelines (WCAG) är en samling riktlinjer för att öka 
+            tillgängligheten på internet för användare med funktionssvårigheter. Framförallt är riktlinjerna 
+            fokuserade kring information såsom texter, bilder, ljud, kod och taggning som definierar 
+            strukturella objekt samt presentation av innehåll i olika former. Det kan exempelvis handla 
+            om att erbjuda textalternativ för visuella element eller att göra det enklare för besökaren på 
+            webbsidan att lyssna på sidans innehåll istället för att läsa det visuellt.<br><br>
+        
+            Den inledande proccesen handlar om att ta reda på webbplatsens syfte och mål, därefter får man 
+            sedan värdera hur kompitabellt informationsinnehållet är i förhållande till WCAG. Arbetet sker 
+            i en dialog mellan kund och leverantör och kräver en strukturerad process för att inte missa 
+            viktiga detaljer. Generellt ska svenska myndigheter följa nivå AA, alltså den näst högsta nivån 
+            av WCAG. Här är tre exempel på några av dem kraven som måste uppfyllas:<br>
+
+        <h2>Responsiv design</h2>
+        <p>
+            Innehåll ska kunna presenteras utan att information eller funktionalitet går förlorad. Du ska kunna 
+            se och läsa sidans innehåll på en 320 x 256 pixlars skärm, vilket motsvarar ungefär bredden på en 
+            iPhone 5. Hemsidan ska inte heller behöva en horisontell skroll för att presentera allt innehåll. 
+            Dock finns det undantag för innehåll som kartor, diagram och spel.
+        </p>
+
+        <h2>Grafisk kontrast</h2>
+        <p>
+            Grafiska object, så som knappar och andra kontroller, som är nödvändiga för att förstå innehåll 
+            eller funktionalitet måste ha ett minimum kontrastvärde mot omgivande färger (minst 4,5:1). Det 
+            finns en rad olika verktyg man kan använda för att testa kontrasten på sin hemsida eller app. 
+            Vill man däremot säkerställa att en hemsida eller app uppfyller kraven krävs en mer omfattande 
+            analys.
+        </p>
+
+        <h2>Läsbarhet</h2>
+        <p>
+            För att sidans uttal ska ske korrekt i skärmläsaren så krävs det att sidans språk anges i kod. 
+            Har man inte gjort detta korrekt så kan, till exempel en rösttjänst, inte tyda vad som står på 
+            ens hemsida eller app.
+        </p>
+
+        </p>
+        <br>
+    </div>
+
+    <div class="page-length"></div>
+</body>
+</html>

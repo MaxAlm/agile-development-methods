@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="internet-style.css">
+    <script src="https://kit.fontawesome.com/1e8c4929c3.js" crossorigin="anonymous"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <title>Agila Utvecklingsmetoder och HTML</title>
+</head>
+<body>
+    
+    <img banner="hamburger menu icon" id="menu-button" src="img/hamburger-icon.png" alt="hambrger-icon.png" onclick="showMenu()">
+    <div class="menu-bar-back"></div>
+
+    <!--MOBILE MENU-->
+    <div banner="mobile menu" id="menu-bar" class="menu-bar-closed">
+        <ul style="list-style-type: none;">
+            <li><a href="index.html">HEM</a></li>
+            <li><a href="klienttekniker.html">KLIENTTEKNIKER</a></li>
+            <li><a href="projektmetodik.html">PROJEKTMETODIK</a></li>
+            <li><a href="internet.html" class="active">INTERNET</a></li>
+            <li><a href="tillganglighet.html">TILLGÄNGLIGHET</a></li>
+            <li><a href="analys.html">ANALYS</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+    </div>
+
+    <div banner="content" class="content">
+        <!--STANDARD MENU-->
+        <div class="menu">
+            <ul style="list-style-type: none;">
+                <li><a href="index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HEM</a></li>
+                <li><a href="klienttekniker.html"><i class="fa fa-code"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KLIENTTEKNIKER</a></li>
+                <li><a href="projektmetodik.html"><i class="fa fa-list"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PROJEKTMETODIK</a></li>
+                <li><a href="internet.html" class="active"><i class="fa fa-globe"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INTERNET</a></li>
+                <li><a href="tillganglighet.html"><i class="fa fa-cogs"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TILLGÄNGLIGHET</a></li>
+                <li><a href="analys.html"><i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ANALYS</a></li>
+                <li><a href="kontakt.html"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KONTAKT</a></li>
+            </ul>
+        </div>
+
+        <!--PAGE VIDEO-->
+        <div class="frame">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5q3QH-HHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!--PAGE TITLE-->
+    <div class="page-title">
+        <h2>Internet</h2>
+    </div>
+
+    <!--PAGE TEXT-->
+    <div class="page-text">
+        <h1>Klient-server-modellen</h1>
+        <p>Klient-server är ett begrepp som används för en populär modell där man 
+            använder servrar som är skapade för en specifik uppgift. Man använder dessutom motsvarande 
+            klienter för att kunna utnyttja servrarnas tjänster. Klient-server-modellen kan användas 
+            på internet samt i det lokala nätverket. Några exempel på klient-servrar på internet är 
+            webbservrar och webbläsare, FTP-servrar och FTP-klienter samt DNS. Klientdatorer är 
+            vanligen  PC-datorer med mjukvara som efterfrågar och tar emot information i nätverket. 
+            Alla typer av datorer kan fungera som klienter.<br><br>
+
+            Den huvudsakliga skillnaden mellan en server och en klient är att en klient är en maskin 
+            eller mjukvara som begär tjänster via webben, medans en server är en maskin eller ett program 
+            som tillhandahåller tjänster till kunderna enligt kundens önskemål.</p>
+
+        <h1>Internetkomunikation</h1>
+        <p>Den 20e december år 1991 publicerades världens första hemsida. 
+            Hemsidan var en guide till hur man använder internet samt skapar sin egen 
+            server och gjordes av vetenskapsmannen Tim Berners-Lee. Idag finns det över 
+            1.7 miljarder hemsidor, men hur går det till när man tar sig till en hemsida? 
+            Två viktiga delar inom internetkommunikation är IP-adresser och DNS-servrar.<br>
+        </p>
+
+        <h2>IP-adress</h2>
+        <p>
+            En IP-adress är ett nummer som identifierar en anslutning mot internet. IP-adresser 
+            är nätets egna adress system och används för att information som skickas ska komma 
+            fram till rätt mottagare. Standarden, som har använts sen internet slog igenom, 
+            kallas IPv4 (IP version 4) och är byggt av 32 bitar, vilket betyder att antalet 
+            adresser är begränsat till lite mer än 4 miljarder IP-adresser.<br><br>
+            
+            Idag är det inte bara datorer som kopplar upp sig på nätet utan också mobiltelefoner 
+            och hushållelektronik, på grund av detta börjar IP-adresserna ta slut. Därför har man 
+            tagit fram IP version 6 som kommer ersätta IPv4 i framtiden. Alla datorer som är anslutna 
+            till nätet har en IP-adress. 
+        </p>
+
+        <h2>DNS-server</h2>
+        <p>
+            DNS står för Domain Name System (eller domännamnsystem på svenska) och är ett sätt att förenkla 
+            adressering i system som använder IP-adresser, som till exempel internet. För en dator består 
+            en adress till en webbsida av ett IP-nummer, exempelvis 76.223.115.82. Då dessa adresser är 
+            svåra att komma ihåg för oss människor så använder vi istället namn i textformat. När vi skriver 
+            in adressen till en hemsida i textformat används DNS för att översätta det till rätt IP-nummer. 
+            Översättningen sköts av en DNS-server hos internetleverantören.
+        </p>
+
+        <h1>Protokoll</h1>
+        <p>Internet Protocol (IP-protokollet på svenska) är det 
+            kommunikationsprotokoll som används vid överföring av information på 
+            nätet. Enligt protokollet ska varje dator ansluten till nätet ha en IP-adress, 
+            med hjälp av denna kan routrar vidareförmedla information mellan olika fysiska 
+            nätverk så att informationen levereras till rätt mottagare. IP-protokollet, 
+            också kallat internetprotokoll, är ett “bästa försök”-system, vilket innebär 
+            att inget paket med information som skickas över internet är säkert att nå 
+            sin destination i samma skick som det skickades. Ofta används andra protokoll 
+            tillsammans med internetprotokollet för data som, av en eller annan anledning, 
+            måste ha extremt hög trohet. </p>
+
+        <h1>http / https</h1>
+        <p>Http står för HyperText Transfer Protocol och är ett protokoll som används för kommunikation 
+            av webbsidor mellan bland annat webbläsare och servrar. S:et i https står för Secure och den 
+            enda skillnaden mellan http och https är att https är krypterad och därför säkrare att använda 
+            när det kommer till känslig information. På sökmotorer kan man dessutom bli “bestraffad” om 
+            ens hemsida inte använder https. Ett exempel på detta är att din hemsida får sämre rankning 
+            i sökresultat, samt att din hemsida kan markeras med en varningssymbol.</p>
+
+        <h1>ftp / ftps</h1>
+        <p>Ftp står för File Transfer Protocol och är ett protokoll för filöverföring när man, till 
+            exempel, laddar upp en hemsida. Ftp har en hel del användbara funktioner, som möjligheten 
+            att överföra flera filer samtidigt, möjligheten att återuppta en överföring om anslutningen 
+            har brutits och möjligheten att schemalägga överföringar. Precis som i https så står s:et i 
+            ftps för Secure, skillnaden mellan ftp och ftps är att ftps är en säkrare variant då den, 
+            precis som https, är krypterad. </p>
+        <br>
+    </div>
+
+    <div class="page-length"></div>
+</body>
+</html>

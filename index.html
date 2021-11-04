@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="index-style.css">
+    <script src="https://kit.fontawesome.com/1e8c4929c3.js" crossorigin="anonymous"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <title>Agila Utvecklingsmetoder och HTML</title>
+</head>
+<body>
+    
+    <img banner="hamburger menu icon" id="menu-button" src="img/hamburger-icon.png" alt="hambrger-icon.png" onclick="showMenu()">
+    <div class="menu-bar-back"></div>
+
+    <!--MOBILE MENU-->
+    <div banner="mobile menu" id="menu-bar" class="menu-bar-closed">
+        <ul style="list-style-type: none;">
+            <li><a href="index.html" class="active">HEM</a></li>
+            <li><a href="klienttekniker.html">KLIENTTEKNIKER</a></li>
+            <li><a href="projektmetodik.html">PROJEKTMETODIK</a></li>
+            <li><a href="internet.html">INTERNET</a></li>
+            <li><a href="tillganglighet.html">TILLGÄNGLIGHET</a></li>
+            <li><a href="analys.html">ANALYS</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+    </div>
+
+    <div banner="content" class="content">
+        <!--STANDARD MENU-->
+        <div class="menu">
+            <ul style="list-style-type: none;">
+                <li><a href="index.html" class="active"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HEM</a></li>
+                <li><a href="klienttekniker.html"><i class="fa fa-code"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KLIENTTEKNIKER</a></li>
+                <li><a href="projektmetodik.html"><i class="fa fa-list"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PROJEKTMETODIK</a></li>
+                <li><a href="internet.html"><i class="fa fa-globe"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INTERNET</a></li>
+                <li><a href="tillganglighet.html"><i class="fa fa-cogs"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TILLGÄNGLIGHET</a></li>
+                <li><a href="analys.html"><i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ANALYS</a></li>
+                <li><a href="kontakt.html"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KONTAKT</a></li>
+            </ul>
+        </div>
+
+        <!--PAGE IMAGE-->
+        <div class="page-img">
+            <img src="img/index-img.jpg" alt="html-home-code-img">
+        </div>
+    </div>
+
+    <!--PAGE TITLE-->
+    <div class="page-title">
+        <h2>Agila Utvecklingsmetoder och HTML</h2>
+    </div>
+    
+    <!--PAGE TEXT-->
+    <div class="page-text">
+        <p><br>Följande hemsida har gjorts som en inlämningsuppgift till kursen
+            Agila Utvecklingsmetoder och HTML. På denna hemsida kan du hitta 
+            information om bland annat klienttekniker och projektmetodik.
+        </p>
+        <br><hr><br>
+        <p>
+            <a style="text-decoration-color: black;" href="index.html"><b style="color:black">Hem:</b></a> Innehållsförteckning med direktlänkar till varje rubrik.<br>
+            <a style="text-decoration-color: black;" href="klienttekniker.html"><b style="color:black">Klienttekniker:</b></a> Information om HTML, CSS och JavaScript.<br>
+            <a style="text-decoration-color: black;" href="projektmetodik.html"><b style="color:black">Projektmetodik:</b></a> Information om Vattenfallsmetodik, Agil Utveckling och Hur man arbetar i Scrum.<br>
+            <a style="text-decoration-color: black;" href="internet.html"><b style="color:black">Internet:</b></a> Information om Klient-server-modellen, Internetkommunikation, Protokoll, http/https och ftp / ftps.<br>
+            <a style="text-decoration-color: black;" href="tillganglighet.html"><b style="color:black">Tillgänglighet:</b></a> Information om WCAG.<br>
+            <a style="text-decoration-color: black;" href="analys.html"><b style="color:black">Analys:</b></a> En personlig analys med åsikter om kursen.<br>
+            <a style="text-decoration-color: black;" href="kontakt.html"><b style="color:black">Kontakt:</b></a> Kontaktuppgifter och kontaktformulär.<br>
+            <br>
+        </p>
+    </div>
+
+    <div class="page-length"></div>
+</body>
+</html>

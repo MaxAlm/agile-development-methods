@@ -1,0 +1,136 @@
+/*SET PAGE LENGTH*/
+.page-length {
+    height: 440px;
+}
+
+/*PAGE IMAGE*/
+.content .page-img img {
+    position: relative;
+    width: 800px;
+    height: 100%;
+
+    left: -178px;
+}
+
+/*PAGE TEXT*/
+.page-content-1 {
+    position: relative;
+
+    margin: auto;
+    width: 300px;
+    height: 100%;
+    left: -175px;
+    top: 420px;
+    padding: 5px 20px;
+
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px gray;
+}
+
+.page-content-2 {
+    position: relative;
+
+    margin: auto;
+    width: 300px;
+    height: 100%;
+    left: 175px;
+    top: 226px;
+    padding: 5px 20px;
+
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px gray;
+}
+
+.input-1 {
+    position: relative;
+    width: 210px;
+}
+
+.input-text {
+    position: relative;
+    width: 270px;
+    height: 100px;
+}
+
+#submit-button {
+    width: 58px;
+    height: 22px;
+}
+
+/*PAGE TITLE*/
+.page-title {
+    position: relative;
+    
+    margin: auto;
+    width: 750px;
+    height: 140px;
+    top: 435px;
+}
+
+.page-title h2 {
+    text-align: center;
+    font-size: 70px;
+    line-height: 1.1;
+    color: white;
+    text-shadow: 1px 1px 13px black, 1px 1px 15px black;
+}
+
+.page-text p {
+    font-size: 17px;
+}
+
+.page-text a {
+    font-size: 17px;
+}
+
+@media screen and (max-width: 750px) {
+    .page-length {
+        height: 520px;
+    }
+    
+    .page-title {
+        width: 98vw;
+        top: 450px;
+    }
+    
+    .page-content-1 {
+        left: 0;
+    }
+
+    .page-content-2 {
+        top: 450px;
+        left: 0; 
+    }
+
+    .page-title h2 {
+        font-size: 10vw;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/*Auto-size title and textbox*/
+@media screen and (max-width: 510px) {
+    .content .page-img {
+        width: 100vw; 
+    }
+
+    .page-content-1 {
+        width: 88vw;
+    }
+
+    .page-content-2 {
+        width: 88vw; 
+    }
+}
+
+/*Auto-size image div width*/
+@media screen and (max-width: 300px) {
+    .input-text {
+        width: 210px;
+    }
+}
