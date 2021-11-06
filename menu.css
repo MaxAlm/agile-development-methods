@@ -156,7 +156,7 @@ label {
 }
 
 /*Toggle menu bar*/
-@media screen and (max-width: 1307px) {
+@media screen and (max-width: 1325px) {
     #menu-button {
         display: block;
     }
