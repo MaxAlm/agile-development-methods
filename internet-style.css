@@ -66,8 +66,8 @@
     font-size: 17px;
 }
 
-/*Auto-size video frame*/
-@media screen and (min-width: 1301px) {
+/*Auto-move video frame*/
+@media screen and (min-width: 1326px) {
     .content .frame {
         left: -240px;
     }
