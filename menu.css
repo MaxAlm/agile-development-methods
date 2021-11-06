@@ -147,7 +147,7 @@ label {
 }
 
 /*Auto-close mobile menu when toggling back to desktop menu*/
-@media screen and (min-width: 1326px) {
+@media screen and (min-width: 1336px) {
     #menu-bar {
         height: 70px;
         box-shadow: none;
@@ -156,7 +156,7 @@ label {
 }
 
 /*Toggle menu bar*/
-@media screen and (max-width: 1325px) {
+@media screen and (max-width: 1335px) {
     #menu-button {
         display: block;
     }
