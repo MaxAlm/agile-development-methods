@@ -14,25 +14,27 @@
 </head>
 <body>
     
-    <img banner="hamburger menu icon" id="menu-button" src="img/hamburger-icon.png" alt="hambrger-icon.png" onclick="showMenu()">
+    <img role="button" id="menu-button" src="img/hamburger-icon.png" alt="hambrger-icon.png" onclick="showMenu()">
     <div class="menu-bar-back"></div>
 
     <!--MOBILE MENU-->
-    <div banner="mobile menu" id="menu-bar" class="menu-bar-closed">
-        <ul style="list-style-type: none;">
-            <li><a href="index.html" class="active">HEM</a></li>
-            <li><a href="klienttekniker.html">KLIENTTEKNIKER</a></li>
-            <li><a href="projektmetodik.html">PROJEKTMETODIK</a></li>
-            <li><a href="internet.html">INTERNET</a></li>
-            <li><a href="tillganglighet.html">TILLGÄNGLIGHET</a></li>
-            <li><a href="analys.html">ANALYS</a></li>
-            <li><a href="kontakt.html">KONTAKT</a></li>
-        </ul>
-    </div>
+    <header>
+        <div id="menu-bar" class="menu-bar-closed">
+            <ul style="list-style-type: none;">
+                <li><a href="index.html" class="active">HEM</a></li>
+                <li><a href="klienttekniker.html">KLIENTTEKNIKER</a></li>
+                <li><a href="projektmetodik.html">PROJEKTMETODIK</a></li>
+                <li><a href="internet.html">INTERNET</a></li>
+                <li><a href="tillganglighet.html">TILLGÄNGLIGHET</a></li>
+                <li><a href="analys.html">ANALYS</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <div banner="content" class="content">
+    <div class="content">
         <!--STANDARD MENU-->
-        <div class="menu">
+        <div role="navigation" class="menu">
             <ul style="list-style-type: none;">
                 <li><a href="index.html" class="active"><i class="fa fa-home">&nbsp;&nbsp;</i>HEM</a></li>
                 <li><a href="klienttekniker.html"><i class="fa fa-code">&nbsp;&nbsp;</i>KLIENTTEKNIKER</a></li>
@@ -45,19 +47,20 @@
         </div>
 
         <!--PAGE IMAGE-->
-        <div class="page-img">
+        <div role="img" aria-label="home page image" class="page-img">
             <img src="img/index-img.jpg" alt="html-home-code-img">
         </div>
     </div>
 
     <!--PAGE TITLE-->
-    <div class="page-title">
+    <div role="contentinfo" class="page-title">
         <h2>Agila Utvecklingsmetoder och HTML</h2>
     </div>
     
     <!--PAGE TEXT-->
     <div class="page-text" role="main">
-        <p><br>Följande hemsida har gjorts som en inlämningsuppgift till kursen
+        <h1>Hem</h1>
+        <p>Följande hemsida har gjorts som en inlämningsuppgift till kursen
             Agila Utvecklingsmetoder och HTML. På denna hemsida kan du hitta 
             information om bland annat klienttekniker och projektmetodik.
         </p>
