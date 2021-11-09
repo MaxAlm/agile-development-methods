@@ -9,29 +9,31 @@
     <link rel="stylesheet" href="kontakt-style.css">
     <script src="https://kit.fontawesome.com/1e8c4929c3.js" crossorigin="anonymous"></script>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <title>Agila Utvecklingsmetoder och HTML</title>
+    <title>Kontakt</title>
 </head>
 <body>
     
-    <img banner="hamburger menu icon" id="menu-button" src="img/hamburger-icon.png" alt="hambrger-icon.png" onclick="showMenu()">
+    <img role="button" id="menu-button" src="img/hamburger-icon.png" alt="hambrger-icon.png" onclick="showMenu()">
     <div class="menu-bar-back"></div>
 
     <!--MOBILE MENU-->
-    <div banner="mobile menu" id="menu-bar" class="menu-bar-closed">
-        <ul style="list-style-type: none;">
-            <li><a href="index.html">HEM</a></li>
-            <li><a href="klienttekniker.html">KLIENTTEKNIKER</a></li>
-            <li><a href="projektmetodik.html">PROJEKTMETODIK</a></li>
-            <li><a href="internet.html">INTERNET</a></li>
-            <li><a href="tillganglighet.html">TILLGÄNGLIGHET</a></li>
-            <li><a href="analys.html">ANALYS</a></li>
-            <li><a href="kontakt.html" class="active">KONTAKT</a></li>
-        </ul>
-    </div>
+    <header>
+        <div id="menu-bar" class="menu-bar-closed">
+            <ul style="list-style-type: none;">
+                <li><a href="index.html">HEM</a></li>
+                <li><a href="klienttekniker.html">KLIENTTEKNIKER</a></li>
+                <li><a href="projektmetodik.html">PROJEKTMETODIK</a></li>
+                <li><a href="internet.html">INTERNET</a></li>
+                <li><a href="tillganglighet.html">TILLGÄNGLIGHET</a></li>
+                <li><a href="analys.html">ANALYS</a></li>
+                <li><a href="kontakt.html" class="active">KONTAKT</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <div banner="content" class="content">
+    <div class="content">
         <!--STANDARD MENU-->
-        <div class="menu">
+        <div role="navigation" class="menu">
             <ul style="list-style-type: none;">
                 <li><a href="index.html"><i class="fa fa-home">&nbsp;&nbsp;</i>HEM</a></li>
                 <li><a href="klienttekniker.html"><i class="fa fa-code">&nbsp;&nbsp;</i>KLIENTTEKNIKER</a></li>
@@ -44,31 +46,30 @@
         </div>
 
         <!--PAGE IMAGE-->
-        <div class="page-img">
+        <div role="img" aria-label="contact page image" class="page-img">
             <img src="img/kontakt-img.jpg" alt="contact-img">
         </div>
     </div>
 
     <!--PAGE TITLE-->
-    <div class="page-title">
+    <div role="contentinfo" class="page-title">
         <h2>Kontakt</h2>
     </div>
 
     <!--CONTACT INFO-->
-    <div class="page-content-1">
+    <div role="main" class="page-content-1">
         <h1>Uppgifter</h1>
         <p>Max Almroth<br>
             <i class="fa fa-envelope-o">&nbsp;</i> max.almroth95@gmail.com<br>
-            <i class="fa fa-github">&nbsp;</i> <a href="https://github.com/MaxAlm" target="_blank">GitHub</a><br>
-            <i class="fa fa-linkedin-square">&nbsp;</i> <a href="https://www.linkedin.com/in/max-almroth-253024225/" target="_blank">LinkedIn</a><br>
+            <i class="fa fa-phone">&nbsp;</i> 070-540 68 79</a><br>
         </p>
         <br>
     </div>
 
     <!--CONTACT FORM-->
-    <div class="page-content-2">
+    <div role="form" class="page-content-2">
         <h1>Formulär</h1>
-        <form action="tack.html" name="contactForm" onsubmit="">
+        <form action="tack.html" name="contactForm" onsubmit="submitForm()">
             <!--Name label and input-->
             <label for="name">Namn:<br>
                 <input name="name" type="text" class="input-1" style="font-size: 15px;" placeholder="Ditt namn..." required>
