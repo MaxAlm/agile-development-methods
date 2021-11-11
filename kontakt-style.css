@@ -25,7 +25,7 @@ a {
     width: 300px;
     height: 100%;
     left: -175px;
-    top: 420px;
+    top: 440px;
     padding: 5px 20px;
 
     background-color: white;
@@ -51,12 +51,16 @@ a {
 .input-1 {
     position: relative;
     width: 210px;
+
+    transition: 0.5s;
 }
 
 .input-text {
     position: relative;
     width: 270px;
     height: 100px;
+
+    transition: 0.5s;
 }
 
 #submit-button {
@@ -88,6 +92,26 @@ a {
 
 .page-text a {
     font-size: 17px;
+}
+
+/*ERROR TEXT*/
+#error {
+    width: 270px;
+    background-color: rgb(255, 218, 218);
+    height: 0px;
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+.error-anim {
+    animation-name: error-animation;
+    animation-duration: 2s;
+}
+
+@keyframes error-animation {
+    0% { background-color: rgb(247, 102, 102); }
+    66% { background-color: rgb(255, 218, 218); }
 }
 
 @media screen and (max-width: 750px) {
@@ -136,6 +160,10 @@ a {
 /*Auto-size image div width*/
 @media screen and (max-width: 300px) {
     .input-text {
+        width: 210px;
+    }
+
+    #error {
         width: 210px;
     }
 }

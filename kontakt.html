@@ -62,7 +62,8 @@
         <h1>Uppgifter</h1>
         <p>Max Almroth<br>
             <i class="fa fa-envelope-o">&nbsp;</i> max.almroth95@gmail.com<br>
-            <i class="fa fa-phone">&nbsp;</i> 070-540 68 79</a><br>
+            <i class="fa fa-github">&nbsp;</i> <a href="https://github.com/MaxAlm" target="_blank">GitHub</a><br>
+            <i class="fa fa-linkedin-square">&nbsp;</i> <a href="https://www.linkedin.com/in/max-almroth-253024225/" target="_blank">LinkedIn</a><br>
         </p>
         <br>
     </div>
@@ -70,26 +71,30 @@
     <!--CONTACT FORM-->
     <div role="form" class="page-content-2">
         <h1>Formulär</h1>
-        <form action="tack.html" name="contactForm" onsubmit="submitForm()">
+        <form name="contactForm">
             <!--Name label and input-->
             <label for="name">Namn:<br>
-                <input name="name" type="text" class="input-1" style="font-size: 15px;" placeholder="Ditt namn..." required>
+                <input name="name" id="name" type="text" class="input-1" style="font-size: 15px;" placeholder="Ditt namn...">
             </label><br><br>
 
             <!--Email label and input-->
             <label for="mail">Epost:<br>
-                <input name="mail" type="email" class="input-1" style="font-size: 15px;" placeholder="Din epost adress..." required>
+                <input name="mail" id="mail" type="email" class="input-1" style="font-size: 15px;" placeholder="Din epost adress...">
             </label><br><br>
 
             <!--Message label and input-->
             <label for="message">Meddelande:<br>
-                <textarea name ="message" class="input-text" style="font-size: 15px;" placeholder="Ditt meddelande..." required></textarea>
-            </label><br><br>
+                <textarea name ="message" id="message" class="input-text" style="font-size: 15px;" placeholder="Ditt meddelande..."></textarea>
+            </label><br>
+
+            <!--Error message-->
+            <p id="error">error</p>
 
             <!--Submit form-->
-            <input type="submit" value="Skicka">
+            <input type="button" id="submit" value="Skicka" onclick="submitForm()">
         </form>
-        <br><br>
+        <p id="sending-text"></p>
+        <br>
     </div>
 
     <div class="page-length"></div>
