@@ -41,6 +41,10 @@
     font-weight: bold;
 }
 
+.page-text a:hover {
+    text-shadow: 1px 1px 5px lightgray, 1px 1px 5px whitesmoke;
+}
+
 /*PAGE TITLE*/
 .page-title {
     position: relative;
