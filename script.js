@@ -1,8 +1,5 @@
-// Global variables
-var clicked = false;
-
 function showMenu() {
-    var mb = document.getElementById("menu-bar");
+    let mb = document.getElementById("menu-bar");
     
     if (mb.className == "menu-bar-closed") {
         mb.className = "menu-bar-open";
@@ -14,110 +11,24 @@ function showMenu() {
 }
 
 function submitForm() {
-    var error = false;
-    var errorText = document.getElementById("error");
-    var name = document.forms["contactForm"]["name"];
-    var mail = document.forms["contactForm"]["mail"];
-    var message = document.forms["contactForm"]["message"];
-    var submit = document.forms["contactForm"]["submit"];
+    let name = document.forms["contactForm"]["name"];
+    let mail = document.forms["contactForm"]["mail"];
+    let message = document.forms["contactForm"]["message"];
+    let submit = document.forms["contactForm"]["submit"];
 
-    if (!clicked) {
-        // Toggle clicked
-        clicked = true;
+    // Disable input fields
+    name.disabled = true;
+    mail.disabled = true;
+    message.disabled = true;
+    submit.disabled = true;
 
-        // Clear error message
-        errorText.innerHTML = "";
+    // Show sending text and set redirecting timerout
+    document.getElementById("sending-text").innerHTML = "Skickar...";
 
-        // Create errorCount variable
-        var errorCount = 0;
+    setTimeout(function() {
+        window.location.href = "tack.html";
+    }, 2000);
 
-        // Check if user entered name
-        if (name.value == "") {
-            errorText.innerHTML = "▸ Namn fältet är tomt";
-            errorCount++;
-            error = true;
-        }
-
-        // Check if user entered email correctly
-        if (mail.value == "") {
-            // If previous error exists, <br>
-            if (error) {
-                errorText.innerHTML += '<br>';
-            } else {
-                error = true;
-            }
-            
-            errorText.innerHTML += "▸ Email fältet är tomt";
-            errorCount++;
-        }
-        else {
-            const arr = ["@", "."];
-
-            for (let i = 0; i < arr.length; i++) {
-                // Check if email includes @ and .
-                if (!mail.value.includes(arr[i])) {
-                    // If previous error exists, <br>
-                    if (error) {
-                        errorText.innerHTML += '<br>';
-                    } else {
-                        error = true;
-                    }
-                    
-                    errorText.innerHTML += "▸ Ogiltig email";
-                    errorCount++;
-                    break;
-                }
-            }
-        }
-
-        // Check if user entered a message
-        if (message.value == "") {
-            // If previous error exists, <br>
-            if (error) {
-                errorText.innerHTML += '<br>';
-            } else {
-                error = true;
-            }
-            
-            errorText.innerHTML += "▸ Meddelande fältet är tomt";
-            errorCount++;
-        }
-
-        // Set error message size
-        switch (errorCount) {
-            case 1:
-                errorText.style.height = "23px";
-                break;
-
-            case 2:
-                errorText.style.height = "48px";
-                break;
-
-            case 3:
-                errorText.style.height = "73px";
-                break;
-        }
-
-        // If all info was entered correctly, tell user message is being sent and redirect
-        if (!error) {
-            document.getElementById("sending-text").innerHTML = "Skickar...";
-            name.disabled = true;
-            mail.disabled = true;
-            message.disabled = true;
-            submit.disabled = true;
-
-            // Redirect user after 2 seconds
-            setTimeout(function() {
-                window.location.href = "tack.html";
-            }, 2000);
-        } else {
-            errorText.className = "error-anim";
-            
-            setTimeout(function() {
-                errorText.className = "";
-                errorText.style.height = "0px";
-                clicked = false;
-            }, 3000);
-        }
-    }
+    // Return false to prevent form reset
+    return false;
 }

@@ -71,27 +71,24 @@
     <!--CONTACT FORM-->
     <div role="form" class="page-content-2">
         <h1>Formulär</h1>
-        <form name="contactForm">
-            <!--Name label and input-->
+        <form name="contactForm" onsubmit="return submitForm()">
+            <!--Name-->
             <label for="name">Namn:<br>
-                <input name="name" id="name" type="text" class="input-1" style="font-size: 15px;" placeholder="Ditt namn...">
+                <input name="name" id="name" type="text" class="input-1" style="font-size: 15px;" placeholder="Ditt namn..." required>
             </label><br><br>
 
-            <!--Email label and input-->
+            <!--Email-->
             <label for="mail">Epost:<br>
-                <input name="mail" id="mail" type="email" class="input-1" style="font-size: 15px;" placeholder="Din epost adress...">
+                <input name="mail" id="mail" type="email" class="input-1" style="font-size: 15px;" pattern="[A-Öa-ö0-9._-]+@[A-Öa-ö0-9]+.[A-Öa-ö]{2,}" placeholder="Din epost adress..." required>
             </label><br><br>
 
-            <!--Message label and input-->
+            <!--Message-->
             <label for="message">Meddelande:<br>
-                <textarea name ="message" id="message" class="input-text" style="font-size: 15px;" placeholder="Ditt meddelande..."></textarea>
-            </label><br>
-
-            <!--Error message-->
-            <p id="error">error</p>
+                <textarea name ="message" id="message" class="input-text" style="font-size: 15px;" placeholder="Ditt meddelande..." required></textarea>
+            </label><br><br>
 
             <!--Submit form-->
-            <input type="button" id="submit" value="Skicka" onclick="submitForm()">
+            <input type="submit" id="submit" value="Skicka">
         </form>
         <p id="sending-text"></p>
         <br>
